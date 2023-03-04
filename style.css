@@ -10,18 +10,20 @@
       
 }
 /*navbar*/
-.navbar{
+nav{
     font-family: Ruda;
     position: sticky;
     display: flex;
-    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     height: 90px;
-
+    
+    background-color: black; 
+    top: 0;
+    z-index: 1;
     
 }
-
 .navbar .logo{
    
    padding-left: 40px;
@@ -69,28 +71,7 @@
 
 /*container*/
 
-.about_sec h1{
-    position: absolute;
-    width: 526px;
-    height: 58px;
-    left: 599px;
-    top: 900px;
-
-    font-family: 'Quattrocento';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 0px;
-    /* or 0% */
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-    border-bottom: 5px solid #B62828;
-    
-}
-
-/*Advertise*/
+/********************Advertise*************8*/
 .advertisement{
     
     position: relative;
@@ -105,19 +86,15 @@
 
 .add p{
     width: 100px;
-    width: 600px;
+    width: 550px;
     height: 250px;
     margin: 0px 100px;
-    padding-top: 50px;
 
     font-size: 25px;
     font-weight: 400;
     line-height: 30px;
     letter-spacing: 0.05em;
     text-align: left;
-    border-top: 10px solid #F24C4C;
-    
-
 
 }
 .add h1{
@@ -137,9 +114,219 @@
     
     
 }
+.add .divider{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 430px;
+    height: 13px;
+    left: 100px;
+    top: 250px;
+    
+    background: #F24C4C;
+    box-shadow: 3px 6px 18px rgba(0, 0, 0, 0.25)
+
+}
+
+/*containts*/
+    /*************ABOUT US**************/
 
 
-/*footer*/
+
+    .about_sec h1{
+        position: absolute;
+        width: 600px;
+        height: 58px;
+        left: 599px;
+        top: 900px;
+    
+        font-family: 'Quattrocento';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 0px;
+        /* or 0% */
+    
+        display: flex;
+        align-items: center;
+        text-align: center;
+        
+        
+    }
+    .about_sec .divider{
+        position: absolute;
+        background-color: #B62828;
+        display: inline-block;
+        height: 10px;
+        width: 450px;
+        left: 490px;
+        top: 960px;
+        border-radius: 0px;
+    
+    
+    }
+    
+.about_sec .about_containt p{
+
+    display: flex;
+
+    position: absolute;
+    width:420px;
+    height: 200px;
+    left: 293px;
+    top: 1150px;
+
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    /* or 160% */
+
+    letter-spacing: 0.15em;
+
+    
+}
+
+.about_containt .divider{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 330px;
+    height: 4px;
+    left: 293px;
+    top: 1140px;
+
+    background: #F24C4C;
+    box-shadow: 3px 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.about_containt img{
+    position: absolute;
+    width: 450px;
+    height: 300px;
+    left: 800px;
+    top: 1100px;
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 74.48%, rgba(0, 0, 0, 0.8) 100%), url(.jpg);
+    border-radius: 10px;
+
+    
+}
+
+/***************** menu **********************/
+
+.menu_sec h1{
+    position: absolute;
+    width: 474px;
+    height: 52px;
+    left: 609px;
+    top: 1600px;
+
+    font-family: 'Quattrocento';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 0px;
+    /* or 0% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.menu_sec .divider{
+    position: absolute;
+    width: 474px;
+    height: 9px;
+    left: 450px;
+    top: 1650px;
+
+    background: #B62828;
+}
+.menu_sec P{
+    position: absolute;
+    width: 800px;
+    height: 78px;
+    left: 280px;
+    top: 1700px;
+
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    /* or 160% */
+
+    letter-spacing: 0.09em;
+    
+}
+
+.menu_card .card1{
+    position: absolute;
+    width: 200px;
+    height: 130px;
+    left: 230px;
+    top: 1800px;
+
+    border-radius: 10px;
+}
+
+.menu_card .card2{
+    position: absolute;
+    width: 100px;
+    height: 70px;
+    left: 230px;
+    top: 2030px;
+
+    border-radius: 10px;
+}
+
+.menu_card .card3{
+    position: absolute;
+    width: 273.08px;
+    height: 200px;
+    left: 230px;
+    top: 2260px;
+
+    background: url(.jpg);
+    border-radius: 10px;
+}
+/*
+.menu_card .card4{
+    position: absolute;
+    width: 273.08px;
+    height: 200px;
+    left: 193px;
+    top: 2389px;
+
+    background: url(.jpg);
+    border-radius: 10px;
+}
+.menu_card .card5{
+    position: absolute;
+    width: 273.08px;
+    height: 200px;
+    left: 193px;
+    top: 2389px;
+
+    background: url(.jpg);
+    border-radius: 10px;
+}
+.menu_card .card6{
+    position: absolute;
+    width: 273.08px;
+    height: 200px;
+    left: 193px;
+    top: 2389px;
+
+    background: url(.jpg);
+    border-radius: 10px;
+}
+
+
+
+/****************************** footer *****************************/
 .footer{
     background-color: black;
 }
